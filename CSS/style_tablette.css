@@ -1,0 +1,122 @@
+/* version tablette : Nouvelles règles si la fenêtre fait min 769px et max 992px de large  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    body {
+        margin: 0% 7% 0% 7%;
+    }
+
+    img.logo {
+        width: 6%;
+        height: 1%;
+    } 
+
+    .formulaire {
+        width: 42%;  /*42% de la page, divisé en 3 blocks de 12%(.location_dot)+ 57%(input.champ) + 31%(.bouton_rechercher) */
+    }
+    
+    .location_dot {
+        width: 12%;  /*12% de l'éspace disponible dans l'élément ".formulaire"*/
+    }
+    
+    input.champ {
+        width: 58%;  /*58% de l'éspace disponible dans l'élément ".formulaire"*/
+    }
+    
+    .bouton_rechercher {
+        width: 30%;  /*30% de l'éspace disponible dans l'élément ".formulaire"*/
+    }
+
+    .loupe { /*inscrit au code html, n'existe pas en version desktop et tablette*/
+        display: none;
+    }
+
+    .block_filtres {
+        width: 100%;
+    }
+
+    .block_hebergements_et_populaires {
+        height: 959px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5% 0% 0% 0%;
+    } /*les blocks s'empilent*/
+
+    .block_hebergements {
+        width: 100%;
+        height: 65%;
+        margin: 0%;
+    }
+
+    .block_cards_populaires {
+        height: 52%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2% 0% 0% 4.5%;
+    }
+
+    .block_les_plus_populaires {
+        width: 100%;
+        height: 29%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.card_populaires {
+        width: 31%;
+        height: auto;
+    }
+
+    .titre_populaires {
+        width: 90%;
+        margin: 4% 4.5% 2% 4.5%;
+        align-items: center;
+    }
+
+    div.legende_populaires {
+        margin: 0% 0% 0% 4%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img.photos_les_plus_populaires {
+        width: 38%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .block_activites {
+        width: 100%;
+    }
+
+    .card_activites {
+        height: 267px;
+    }
+
+    .noms_activites {
+        font-weight: 700;
+        font-size: 1em;
+        margin: 3% 1% 0% 7%;
+    }
+
+    .photos_activites {
+        width: 100%;
+        height: 80%;
+    }
+
+    .a_propos,
+    .nos_hebergements,
+    .assistance {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 30%;
+        padding: 0% 0% 3% 5%;
+    }
+}
