@@ -261,8 +261,8 @@ article.card_populaires {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     height: 28%;
     border: 4px solid #FFFFFF;
-    /* padding: 1.2%; */
 }
+
 
 img.photos_les_plus_populaires {
     width: 40%;
@@ -322,10 +322,11 @@ p {
 div.legende_populaires {
     margin: 0% 0% 0% 3%;
     height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} /*valeur largeur nescessaire pour firefox*/
 
 .noms_populaires {
     font-weight: 700;
